@@ -101,14 +101,6 @@ const UpdateItemForm = ({
           title: "Item Updated successfully!",
           description: `${itemName} has been updated to ${data.itemName}`,
         });
-      } else {
-        if (data?.error && data !== null) {
-          toast({
-            title: "Item creation failed!",
-            description: `We encountered the following issues: ${data.error}`,
-            variant: "destructive",
-          });
-        }
       }
     } catch (err) {
       console.log(err);

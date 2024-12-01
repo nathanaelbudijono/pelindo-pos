@@ -26,9 +26,9 @@ export const postItem = async (
         success: res.ok,
         status: res.status,
         id: data.id,
-        itemName: data.name,
+        itemName: data.itemName,
         price: data.price,
-        imagePath: data.image,
+        imagePath: data.imagePath,
         category: data.category,
       };
     } else {
@@ -138,9 +138,9 @@ export const putItem = async (
         success: res.ok,
         status: res.status,
         id: data.id,
-        itemName: data.name,
+        itemName: data.itemName,
         price: data.price,
-        imagePath: data.image,
+        imagePath: data.imagePath,
         category: data.category,
       };
     } else {
