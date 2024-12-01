@@ -194,8 +194,9 @@ namespace api.controller
                 {
                     return NotFound("The item doesnt exist");
                 }
-                _fileService.DeleteFile(existingItem.ImagePath);
                 await _itemRepo.DeleteAsync(id);
+                _fileService.DeleteFile(existingItem.ImagePath);
+          
                 return NoContent();
             }
             catch (Exception e)
